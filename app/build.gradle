@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id("io.gitlab.arturbosch.detekt").version("1.23.1")
 }
 
 android {
@@ -46,6 +47,10 @@ android {
     }
 }
 
+detekt {
+    buildUponDefaultConfig = true
+}
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.8.0'
@@ -65,3 +70,5 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 }
+
+apply plugin: "io.gitlab.arturbosch.detekt"
