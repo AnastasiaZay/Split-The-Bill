@@ -70,4 +70,6 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    mplementation project(path: ':core:designsystem:theme')
 }
+
