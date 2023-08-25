@@ -1,7 +1,5 @@
 package com.splitthebill.navigation
 
-import androidx.annotation.StringRes
-
 sealed class NavDestinations(val route: String) {
 
     object Onboarding : NavDestinations("onboarding_screen")
