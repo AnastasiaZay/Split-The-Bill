@@ -16,3 +16,9 @@ rootProject.name = "SplitTheBill"
 include ':app'
 
 
+include ':feature'
+include ':core:test'
+include ':core:navigation'
+include ':core:designsystem:theme'
+include ':core:designsystem:resourses'
+include ':core:designsystem:components'
