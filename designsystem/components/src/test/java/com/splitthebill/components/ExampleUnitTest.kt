@@ -1,4 +1,4 @@
-package com.niderkwel.components
+package com.splitthebill.components
 
 import org.junit.Test
 

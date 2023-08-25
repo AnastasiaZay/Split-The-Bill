@@ -15,9 +15,9 @@ dependencyResolutionManagement {
 rootProject.name = "SplitTheBill"
 include ':app'
 
-include ':designsystem:components'
 include ':designsystem:resources'
 include ':core'
 include ':navigation'
 
 include ':designsystem:theme'
+include ':designsystem:components'
