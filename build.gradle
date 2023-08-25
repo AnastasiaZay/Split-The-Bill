@@ -1,15 +1,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id 'com.android.application' version '7.4.1' apply false
-    id 'com.android.library' version '7.4.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.7.20' apply false
-
-    id("io.gitlab.arturbosch.detekt").version("1.23.1")
+    alias libs.plugins.com.android.application apply false
+    alias libs.plugins.com.android.library apply false
+    alias libs.plugins.org.jetbrains.kotlin.android apply false
+    alias libs.plugins.io.gitlab.arturbosch.detekt apply true
 }
 
 subprojects {
-    apply plugin: "io.gitlab.arturbosch.detekt"
-
     detekt {
         buildUponDefaultConfig = true // preconfigure defaults
         allRules = false // activate all available (even unstable) rules.
