@@ -1,4 +1,4 @@
-package com.example.theme
+package com.example.splitthebill.ui.theme
 
 import android.app.Activity
 import android.os.Build
@@ -16,20 +16,15 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = SkyBlue,
-    secondary = SandColor,
-    background = DarkGrey,
-    surface = LightDarkGrey,
-    surfaceVariant = LighterDarkGrey
+    primary = Purple80,
+    secondary = PurpleGrey80,
+    tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = SkyBlue,
-    secondary = SandColor,
-    background = DarkGrey,
-    surface = LightDarkGrey,
-    surfaceVariant = LighterDarkGrey
-
+    primary = Purple40,
+    secondary = PurpleGrey40,
+    tertiary = Pink40
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
