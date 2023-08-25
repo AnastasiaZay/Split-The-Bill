@@ -17,6 +17,7 @@ include ':app'
 
 include ':designsystem:components'
 include ':designsystem:resources'
-include ':designsystem:theme'
 include ':core'
 include ':navigation'
+
+include ':designsystem:theme'

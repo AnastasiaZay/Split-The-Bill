@@ -1,4 +1,4 @@
-package com.example.theme
+package com.splitthebill.theme
 
 import org.junit.Test
 
