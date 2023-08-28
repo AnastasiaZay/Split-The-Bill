@@ -53,6 +53,8 @@ detekt {
 
 dependencies {
 
+    implementation project(path: ':core:designsystem:theme')
+    implementation project(path: ':core:database')
     implementation(libs.androidx.core.ktx)
     implementation(platform(libs.jetbrains.kotlin.bom))
     implementation(libs.androidx.lifecycle)
@@ -84,7 +86,6 @@ dependencies {
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.compose.ui)
-    debugImplementation(libs.androidx.compose.ui.tooling)
-    debugImplementation(libs.androidx.compose.ui.test.manifest)
+
 }
 
