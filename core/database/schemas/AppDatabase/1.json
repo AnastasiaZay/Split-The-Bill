@@ -1,0 +1,34 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "55a99b8f742b466555adcb72f7fec6aa",
+    "entities": [
+      {
+        "tableName": "ExampleEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`exampleData` TEXT NOT NULL, PRIMARY KEY(`exampleData`))",
+        "fields": [
+          {
+            "fieldPath": "exampleData",
+            "columnName": "exampleData",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "exampleData"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '55a99b8f742b466555adcb72f7fec6aa')"
+    ]
+  }
+}
