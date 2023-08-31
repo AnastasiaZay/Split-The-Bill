@@ -45,58 +45,6 @@ fun Greeting() {
         color = SplitTheBillTheme.colors.background
     ) {
 
-        Column(modifier = Modifier.fillMaxSize().offset((-154).dp, (-52.9).dp),
-            verticalArrangement = Arrangement.Top,
-            horizontalAlignment = Alignment.Start,) {
-
-            Box(
-                modifier = Modifier
-                    .rotate(-28.8f)
-                    .size(253.dp)
-                    .background(SkyBlue, RoundedCornerShape(20.dp))
-            )
-        }
-
-        Column(modifier = Modifier.fillMaxSize().offset((300).dp, (219.21).dp),
-            verticalArrangement = Arrangement.Top,
-            horizontalAlignment = Alignment.Start,) {
-
-            Box(
-                modifier = Modifier
-                    .rotate(-28.8f)
-                    .size(197.61.dp)
-                    .background(LightDarkGrey, RoundedCornerShape(20.dp))
-            )
-        }
-
-        Column(
-            modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.Bottom,
-            horizontalAlignment = Alignment.Start,
-        ) {
-
-            Text(
-                text = "Refill\nyour wallet",
-                style = MaterialTheme.typography.bodyLarge.copy(
-                    fontSize = 40.sp,
-                    fontWeight = FontWeight(700),
-                    color = Color.White
-                ),
-                modifier = Modifier
-                    .padding(bottom = 16.dp)
-                    .widthIn(max = 300.dp)
-                    .padding(horizontal = 16.dp),
-                lineHeight = 48.sp
-            )
-            Text(
-                text = "Get the tools for proper budget allocation. Read news from community members",
-                style = MaterialTheme.typography.bodyLarge.copy(
-                    fontSize = 16.sp,
-                    color = Color.White
-                ),
-                modifier = Modifier.padding(16.dp)
-            )
-        }
     }
 }
 
