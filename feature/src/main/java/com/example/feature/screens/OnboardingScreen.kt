@@ -21,6 +21,7 @@ import androidx.compose.ui.unit.sp
 import com.example.theme.LightDarkGrey
 import com.example.theme.SkyBlue
 import com.example.theme.SplitTheBillTheme
+import com.example.components.buttons.SwipeButton
 
 class OnboardingScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +46,9 @@ fun Greeting() {
         color = SplitTheBillTheme.colors.background
     ) {
 
-        Column(modifier = Modifier.fillMaxSize().offset((-154).dp, (-52.9).dp),
+        Column(modifier = Modifier
+            .fillMaxSize()
+            .offset((-154).dp, (-52.9).dp),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.Start,) {
 
@@ -57,7 +60,9 @@ fun Greeting() {
             )
         }
 
-        Column(modifier = Modifier.fillMaxSize().offset((300).dp, (219.21).dp),
+        Column(modifier = Modifier
+            .fillMaxSize()
+            .offset((300).dp, (219.21).dp),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.Start,) {
 
@@ -74,7 +79,6 @@ fun Greeting() {
             verticalArrangement = Arrangement.Bottom,
             horizontalAlignment = Alignment.Start,
         ) {
-
             Text(
                 text = "Refill\nyour wallet",
                 style = MaterialTheme.typography.bodyLarge.copy(
@@ -83,19 +87,22 @@ fun Greeting() {
                     color = Color.White
                 ),
                 modifier = Modifier
-                    .padding(bottom = 16.dp)
                     .widthIn(max = 300.dp)
                     .padding(horizontal = 16.dp),
                 lineHeight = 48.sp
             )
+            Spacer(modifier = Modifier.padding(8.dp))
             Text(
                 text = "Get the tools for proper budget allocation. Read news from community members",
                 style = MaterialTheme.typography.bodyLarge.copy(
                     fontSize = 16.sp,
                     color = Color.White
                 ),
-                modifier = Modifier.padding(16.dp)
+                modifier = Modifier.padding(horizontal = 16.dp)
             )
+            Spacer(modifier = Modifier.padding(16.dp))
+            SwipeButton(modifier = Modifier.padding(horizontal = 16.dp))
+            Spacer(modifier = Modifier.padding(16.dp))
         }
     }
 }
