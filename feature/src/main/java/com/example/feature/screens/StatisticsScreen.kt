@@ -1,4 +1,4 @@
-package com.example.components.screens
+package com.example.feature.screens
 
 import androidx.compose.runtime.Composable
 
